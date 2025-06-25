@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev --test-scheduled",
+    "dev": "wrangler dev --test-scheduled --host 0.0.0.0 --port 8080",
     "build": "tsc && npm run generate:migrations",
     "deploy": "wrangler deploy",
     "db:generate": "drizzle-kit generate",
